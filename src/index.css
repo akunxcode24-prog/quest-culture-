@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-krem: #F7EBD2;
+    --color-cokelat: #8C4B2D;
+    --color-emas: #D99A35;
+    --color-hijau: #527D65;
+    --color-biru-tua: #315B70;
+  }
+
+  body {
+    background-color: #F7EBD2;
+    color: #3b2818;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+/* Custom adventure game styles */
+.wood-panel {
+  background: linear-gradient(180deg, #FDF7EA 0%, #F5E5C9 100%);
+  border: 3px solid #8C4B2D;
+  box-shadow: 0 8px 24px rgba(140, 75, 45, 0.18), inset 0 2px 0 rgba(255, 255, 255, 0.6);
+}
+
+.wood-button {
+  background: linear-gradient(180deg, #E8A838 0%, #C87C1D 100%);
+  border: 2px solid #8C4B2D;
+  box-shadow: 0 6px 0 #6d3319, 0 10px 16px rgba(109, 51, 25, 0.35);
+  transition: all 0.15s ease-in-out;
+}
+
+.wood-button:hover {
+  background: linear-gradient(180deg, #F0B345 0%, #D48924 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 0 #6d3319, 0 14px 20px rgba(109, 51, 25, 0.4);
+}
+
+.wood-button:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #6d3319, 0 4px 8px rgba(109, 51, 25, 0.3);
+}
+
+.wood-button-secondary {
+  background: linear-gradient(180deg, #64967B 0%, #466E58 100%);
+  border: 2px solid #2B4E3C;
+  box-shadow: 0 4px 0 #1E372A, 0 8px 12px rgba(43, 78, 60, 0.25);
+  transition: all 0.15s ease-in-out;
+}
+
+.wood-button-secondary:hover {
+  background: linear-gradient(180deg, #71A88B 0%, #4D7961 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #1E372A, 0 10px 16px rgba(43, 78, 60, 0.3);
+}
+
+.wood-button-secondary:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #1E372A, 0 3px 6px rgba(43, 78, 60, 0.2);
+}
+
+/* Subtle Indonesian batik floral border pattern overlay */
+.batik-pattern-subtle {
+  background-image: radial-gradient(#D99A35 0.75px, transparent 0.75px), radial-gradient(#8C4B2D 0.75px, #F7EBD2 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+/* Gentle pulse and floating animations */
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-float {
+  animation: floatGentle 3s ease-in-out infinite;
+}
+
+/* Custom scrollbar for pleasant explorer UI */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F7EBD2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D99A35;
+  border-radius: 9999px;
+  border: 2px solid #F7EBD2;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8C4B2D;
+}

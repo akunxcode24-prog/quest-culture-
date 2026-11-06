@@ -1,0 +1,6 @@
+{
+  "name": "CultureQuest",
+  "description": "Jelajahi, Kenali, Lestarikan Warisan Budaya Indonesia — Media pembelajaran petualangan budaya interaktif untuk siswa SD.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
